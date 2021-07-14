@@ -97,17 +97,14 @@ NOTE: Unicode is an information technology standard for the consistent encoding,
 
 A bracket expression enclosed in square brackets is a regular expression that matches a single character, or collating element. If the initial character is a circumflex ^, then this bracket expression is complemented.
 
-See Character Class to see some examples.
 
 ### Greedy and Lazy Match
 
 * 'Greedy' means matching the longest possible string.
-    A Greedy quantifier tells the engine to match as many instances of its quantified token or subpattern as possible. This behavior is called greedy.
+    A Greedy quantifier tells the engine to match as many instances of its quantified token or subpattern as possible.
 
 * 'Lazy' means matching the shortest possible string.
-    A lazy quantifier tells the engine to match as few of the quantified tokens as needed. As you'll see in the table below, a regular quantifier is made lazy by appending a ? question mark to it.
-
-See [link]"https://javascript.info/regexp-greedy-and-lazy for more detailed information.
+    A lazy quantifier tells the engine to match as few of the quantified tokens as needed.
 
 ### Boundaries
 
@@ -135,15 +132,10 @@ For Example: `<([A-Z][0-9]*)\b[^>]*>.*?</\1>` This regex contains only one pair 
 * `(?<=ABC>)` is a postive lookbehind and matches a group before the main expression without including it in the result.
 * `(?<!ABC)` is a negitive lookbehind and Specifies a group that can not match before the main expression (if it matches, the result is discarded).
 
-Lookaheads and lookbehinds forces the main expressions to be what you have defined it as. Without it being exactly what it is it will not be accepted as a valid input.
+Lookaheads and lookbehinds forces the main expressions to be what you have defined it as.
 
-## Author
-
-Christopher Even: UT coding student
 
 ### Sources and References
     * [regexr](https://regexr.com/)
     * [BackRef](https://www.regular-expressions.info/backref.html)
     * [RegExpression](https://www.regular-expressions.info/wordboundaries.html)
-
-My Github [github] https://github.com/Ceven8498
